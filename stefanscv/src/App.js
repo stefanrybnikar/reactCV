@@ -11,6 +11,10 @@ import Col from 'react-bootstrap/Col';
 import WorkExperience from './components/WorkExperience.js';
 import Contact from './components/Contact.js';
 import Languages from './components/Languages.js';
+import Hobbies from './components/Hobbies.js';
+import TechStack from './components/TechStack.js';
+import Education from './components/Education.js';
+import AboutMe from './components/AboutMe.js';
 
 function App() {
   return (
@@ -21,13 +25,18 @@ function App() {
             <Col>
               {' '}
               <Image src={photo} roundedCircle />
+              
               <Contact />
               <Languages />
+              <Hobbies />
             </Col>
             <Col>
+              <AboutMe />
               <WorkExperience />
+              <Education />
             </Col>
           </Row>
+          <TechStack />
         </Container>
       </header>
     </div>
