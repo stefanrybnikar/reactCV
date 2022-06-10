@@ -31,11 +31,12 @@ function App() {
               <Languages />
               <MyWorkday />
               <Hobbies />
+              <Education />
             </Col>
             <Col sm={7}>
               <AboutMe />
               <WorkExperience />
-              <Education />
+              
             </Col>
           </Row>
           <TechStack />
