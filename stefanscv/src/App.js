@@ -15,6 +15,7 @@ import Hobbies from './components/Hobbies.js';
 import TechStack from './components/TechStack.js';
 import Education from './components/Education.js';
 import AboutMe from './components/AboutMe.js';
+import MyWorkday from './components/MyWorkday.js';
 
 function App() {
   return (
@@ -22,15 +23,16 @@ function App() {
       <header className="App-header">
         <Container>
           <Row>
-            <Col>
+            <Col sm={5}>
               {' '}
               <Image src={photo} roundedCircle />
               
               <Contact />
               <Languages />
+              <MyWorkday />
               <Hobbies />
             </Col>
-            <Col>
+            <Col sm={7}>
               <AboutMe />
               <WorkExperience />
               <Education />
