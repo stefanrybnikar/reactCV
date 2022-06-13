@@ -1,5 +1,4 @@
 import ProgressBar from 'react-bootstrap/ProgressBar';
-import Stack from 'react-bootstrap/Stack';
 import Heading from './Heading';
 
 import Container from 'react-bootstrap/Container';
@@ -8,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 
 export default function Languages() {
   return (
-    <div>
+    <div style={{ marginBottom: '25px' }}>
       <Heading label="Languages" />
 
       <Container>

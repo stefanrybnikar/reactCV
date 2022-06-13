@@ -24,9 +24,14 @@ function App() {
         <Container>
           <Row>
             <Col sm={5}>
-              {' '}
               <Image src={photo} roundedCircle />
-              
+            </Col>
+            <Col sm={7}>
+              <AboutMe />
+            </Col>
+          </Row>
+          <Row>
+            <Col sm={5}>
               <Contact />
               <Languages />
               <MyWorkday />
@@ -34,9 +39,7 @@ function App() {
               <Education />
             </Col>
             <Col sm={7}>
-              <AboutMe />
               <WorkExperience />
-              
             </Col>
           </Row>
           <TechStack />

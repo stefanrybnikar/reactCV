@@ -39,7 +39,7 @@ export default function TechStack() {
     'SVN',
   ];
   return (
-    <div>
+    <div style={{ marginBottom: '100px' }}>
       <Heading label="Tech Stack" />
 
       <Container>

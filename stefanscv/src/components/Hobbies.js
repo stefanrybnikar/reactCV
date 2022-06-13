@@ -11,7 +11,7 @@ import hockey from '../pictures/hockey.png';
 
 export default function Hobbies() {
   return (
-    <div>
+    <div style={{ marginBottom: '25px' }}>
       <Heading label="Hobbies" />
 
       <Container>
