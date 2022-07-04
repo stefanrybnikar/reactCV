@@ -1,51 +1,22 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 
-import photo from './photo.jpg';
-import 'bootstrap/dist/css/bootstrap.css';
-import Image from 'react-bootstrap/Image';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-import WorkExperience from './components/WorkExperience.js';
-import Contact from './components/Contact.js';
-import Languages from './components/Languages.js';
-import Hobbies from './components/Hobbies.js';
-import TechStack from './components/TechStack.js';
-import Education from './components/Education.js';
-import AboutMe from './components/AboutMe.js';
-import MyWorkday from './components/MyWorkday.js';
+import Home from './components/Home';
+import About from './components/About';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+import WordCloud from './components/Skills/wordcloud';
+import Layout from './components/Layout';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Container>
-          <Row>
-            <Col sm={5}>
-              <Image src={photo} roundedCircle />
-            </Col>
-            <Col sm={7}>
-              <AboutMe />
-            </Col>
-          </Row>
-          <Row>
-            <Col sm={5}>
-              <Contact />
-              <Languages />
-              <MyWorkday />
-              <Hobbies />
-              <Education />
-            </Col>
-            <Col sm={7}>
-              <WorkExperience />
-            </Col>
-          </Row>
-          <TechStack />
-        </Container>
-      </header>
-    </div>
+    <Layout>
+      <Home />
+      <About />
+      <Skills />
+      <WordCloud />
+      <Contact />
+    </Layout>
   );
 }
 
