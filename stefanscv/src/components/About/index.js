@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-
+import Container from 'react-bootstrap/Container';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 
@@ -15,7 +15,7 @@ const About = () => {
   }, []);
 
   return (
-    <>
+    <Container>
       <div className="container about-page">
         <div className="text-zone">
           <h1>
@@ -33,7 +33,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </>
+    </Container>
   );
 };
 

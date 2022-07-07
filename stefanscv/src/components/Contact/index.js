@@ -19,7 +19,6 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault()
-    console.log("asdas");
     emailjs
       .sendForm(
         process.env.REACT_APP_EMIAL_SERVICE_ID,
@@ -66,6 +65,7 @@ const Contact = () => {
     <>
       <div className="container contact-page">
         <div className="text-zone">
+        <p></p>
           <h1>
             <AnimatedLetters
               letterClass={letterClass}

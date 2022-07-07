@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
+import Container from 'react-bootstrap/Container';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -19,7 +20,7 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <Container>
       <div className="container home-page">
         <div className="text-zone">
           <h1>
@@ -46,7 +47,7 @@ const Home = () => {
       </div>
 
       <Loader type="pacman" />
-    </>
+    </Container>
   );
 };
 

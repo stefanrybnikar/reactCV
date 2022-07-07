@@ -11,11 +11,27 @@ import Layout from './components/Layout';
 function App() {
   return (
     <Layout>
-      <Home />
-      <About />
-      <Skills />
-      <WordCloud />
-      <Contact />
+      <div class="center">
+        <div class="wrap">
+          <div class="table">
+            <div class="row">
+              <Home />
+            </div>
+            <div class="row">
+              <About />
+            </div>
+            <div class="row">
+              <Skills />
+            </div>
+            <div class="row">
+              <WordCloud />
+            </div>
+            <div class="row">
+              <Contact />
+            </div>
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 }

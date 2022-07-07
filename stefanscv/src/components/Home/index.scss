@@ -1,11 +1,15 @@
 .home-page {
   min-height: 566px;
+  height: 100%;
+  width: 100%;
+  z-index:9999999;
+  overflow: hidden;
   .text-zone {
     position: absolute;
-    left: 30%;
+    left: 20%;
     top: 50%;
     transform: translateY(-50%);
-    width: 40%;
+    width: 50%;
     max-height: 90%;
 
     h1 {

@@ -44,14 +44,17 @@
 .container.contact-page,
 .container.about-page,
 .container.skills-page {
-  
-  
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index:9999999;
+  overflow: hidden;
   .text-zone {
     position: absolute;
-    left: 30%;
+    left: 20%;
     top: 30%;
     transform: translateY(-50%);
-    width: 35%;
+    width: 50%;
     vertical-align:top;
     display: table-cell;
     max-height: 70%;
